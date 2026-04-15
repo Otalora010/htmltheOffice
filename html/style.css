@@ -1,0 +1,146 @@
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e6f4f1, #d9efe9);
+  margin: 0;
+  color: #1f2933;
+}
+
+.titulo {
+  text-align: center;
+  padding: 25px;
+  font-weight: 600;
+}
+
+.contenedor {
+  padding: 20px;
+}
+
+.grupo {
+  margin-bottom: 40px;
+}
+
+.grupo h2 {
+  margin-bottom: 10px;
+  color: #0f766e;
+}
+
+
+.grupo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(15,118,110,0.25);
+}
+
+
+.card h3 {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #4b5563;
+  margin: 5px 0;
+}
+
+
+.card ul {
+  padding-left: 18px;
+  margin: 5px 0;
+}
+
+.card li {
+  font-size: 12px;
+}
+
+
+.demo {
+  display: flex;
+  background: #ecfdf5;
+  padding: 6px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.demo div {
+  background: #0f766e;
+  color: white;
+  padding: 6px;
+  margin: 2px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+
+.grid-demo {
+  display: grid;
+  background: #ecfdf5;
+  padding: 6px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.grid-demo div {
+  background: #115e59;
+  color: white;
+  padding: 6px;
+  margin: 2px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+
+.flex-row { flex-direction: row; }
+.flex-between { justify-content: space-between; }
+.flex-align-center { align-items: center; }
+.wrap { flex-wrap: wrap; }
+.altura { height: 60px; }
+.gap-flex { gap: 8px; }
+
+.grow { flex-grow: 2; }
+.shrink { flex-shrink: 2; }
+.basis { flex-basis: 60px; }
+.o1 { order: 1; }
+.o2 { order: 2; }
+.self { align-self: flex-end; }
+
+
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.filas { grid-template-rows: repeat(2,40px); }
+.gap { gap: 10px; }
+.justify { justify-items: center; }
+.align { align-items: center; height: 60px; }
+.place { place-items: center; height: 60px; }
+
+.areas { grid-template-areas: "a b"; }
+.a { grid-area: a; }
+.b { grid-area: b; }
+
+.auto { grid-auto-flow: column; }
+.content { justify-content: center; }
+.alignc { align-content: center; height: 60px; }
+.placec { place-content: center; height: 60px; }
+
+.span { grid-template-columns: 1fr 1fr; }
+.span2 { grid-column: span 2; }
+
+.spanrow { grid-template-rows: 40px 40px; }
+.row2 { grid-row: span 2; }

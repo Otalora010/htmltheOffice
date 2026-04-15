@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox y Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="titulo">Flexbox y Grid (30 Propiedades)</h1>
+
+<main class="contenedor">
+
+<section class="grupo">
+<h2>Flexbox</h2>
+
+<div class="card flex">
+  <h3>flex-direction</h3>
+  <p>Controla la orientación en la que se organizan los elementos</p>
+  <ul>
+    <li>row</li>
+    <li>column</li>
+    <li>row-reverse</li>
+    <li>column-reverse</li>
+  </ul>
+  <div class="demo flex-row"><div>a</div><div>b</div><div>c</div></div>
+</div>
+
+<div class="card flex">
+  <h3>justify-content</h3>
+  <p>Distribuye los elementos a lo largo del eje horizontal</p>
+  <ul>
+    <li>flex-start</li>
+    <li>center</li>
+    <li>flex-end</li>
+    <li>space-between</li>
+    <li>space-around</li>
+  </ul>
+  <div class="demo flex-between"><div>a</div><div>b</div><div>c</div></div>
+</div>
+
+<div class="card flex">
+  <h3>align-items</h3>
+  <p>Organiza los elementos en el eje vertical</p>
+  <ul>
+    <li>stretch</li>
+    <li>center</li>
+    <li>flex-start</li>
+    <li>flex-end</li>
+  </ul>
+  <div class="demo altura flex-align-center"><div>a</div><div>b</div><div>c</div></div>
+</div>
+
+<div class="card flex">
+  <h3>flex-wrap</h3>
+  <p>Permite que los elementos pasen a otra línea si no caben</p>
+  <ul>
+    <li>nowrap</li>
+    <li>wrap</li>
+    <li>wrap-reverse</li>
+  </ul>
+  <div class="demo wrap"><div>a</div><div>b</div><div>c</div><div>d</div></div>
+</div>
+
+<div class="card flex">
+  <h3>align-content</h3>
+  <p>Organiza varias filas dentro del contenedor</p>
+  <ul>
+    <li>center</li>
+    <li>space-between</li>
+    <li>space-around</li>
+  </ul>
+  <div class="demo wrap altura"><div>a</div><div>b</div><div>c</div></div>
+</div>
+
+<div class="card flex">
+  <h3>gap</h3>
+  <p>Genera separación entre los elementos</p>
+  <ul>
+    <li>5px</li>
+    <li>10px</li>
+  </ul>
+  <div class="demo gap-flex"><div>a</div><div>b</div><div>c</div></div>
+</div>
+
+<div class="card flex">
+  <h3>flex-grow</h3>
+  <p>Permite que un elemento aumente su tamaño</p>
+  <ul>
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+  <div class="demo"><div class="grow">a</div><div>b</div></div>
+</div>
+
+<div class="card flex">
+  <h3>flex-shrink</h3>
+  <p>Hace que un elemento se reduzca si es necesario</p>
+  <ul>
+    <li>0</li>
+    <li>1</li>
+  </ul>
+  <div class="demo"><div class="shrink">a</div><div>b</div></div>
+</div>
+
+<div class="card flex">
+  <h3>flex-basis</h3>
+  <p>Indica el tamaño base antes de ajustarse</p>
+  <ul>
+    <li>auto</li>
+    <li>50px</li>
+  </ul>
+  <div class="demo"><div class="basis">a</div><div>b</div></div>
+</div>
+
+<div class="card flex">
+  <h3>order</h3>
+  <p>Modifica el orden visual de los elementos</p>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+  <div class="demo"><div class="o2">a</div><div class="o1">b</div></div>
+</div>
+
+<div class="card flex">
+  <h3>align-self</h3>
+  <p>Permite alinear un elemento de forma independiente</p>
+  <ul>
+    <li>auto</li>
+    <li>flex-end</li>
+  </ul>
+  <div class="demo altura"><div class="self">a</div><div>b</div></div>
+</div>
+
+<div class="card flex">
+  <h3>flex-flow</h3>
+  <p>Combina dirección y salto de línea</p>
+  <ul>
+    <li>row wrap</li>
+    <li>column nowrap</li>
+  </ul>
+  <div class="demo wrap"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card flex">
+  <h3>row-gap</h3>
+  <p>Define la separación entre filas</p>
+  <ul>
+    <li>5px</li>
+    <li>10px</li>
+  </ul>
+  <div class="demo gap-flex"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card flex">
+  <h3>column-gap</h3>
+  <p>Define la separación entre columnas</p>
+  <ul>
+    <li>5px</li>
+    <li>10px</li>
+  </ul>
+  <div class="demo gap-flex"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card flex">
+  <h3>place-content</h3>
+  <p>Organiza el contenido en ambos ejes</p>
+  <ul>
+    <li>center</li>
+    <li>space-between</li>
+  </ul>
+  <div class="demo wrap altura"><div>a</div><div>b</div></div>
+</div>
+
+</section>
+
+<section class="grupo">
+<h2>Grid</h2>
+
+<div class="card grid">
+  <h3>grid-template-columns</h3>
+  <p>Define la cantidad de columnas del diseño</p>
+  <ul><li>1fr 1fr</li><li>repeat(3,1fr)</li></ul>
+  <div class="grid-demo grid-2"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>grid-template-rows</h3>
+  <p>Controla la cantidad y tamaño de las filas</p>
+  <ul><li>50px 50px</li><li>repeat(3,1fr)</li></ul>
+  <div class="grid-demo filas"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>gap</h3>
+  <p>Establece separación entre celdas</p>
+  <ul><li>10px</li><li>20px</li></ul>
+  <div class="grid-demo gap"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>justify-items</h3>
+  <p>Alinea elementos dentro de su celda horizontalmente</p>
+  <ul><li>start</li><li>center</li></ul>
+  <div class="grid-demo justify"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>align-items</h3>
+  <p>Alinea elementos dentro de su celda verticalmente</p>
+  <ul><li>start</li><li>center</li></ul>
+  <div class="grid-demo align"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>place-items</h3>
+  <p>Centra los elementos en ambas direcciones</p>
+  <ul><li>center</li></ul>
+  <div class="grid-demo place"><div>a</div></div>
+</div>
+
+<div class="card grid">
+  <h3>grid-template-areas</h3>
+  <p>Permite organizar zonas del layout</p>
+  <ul><li>"a b"</li></ul>
+  <div class="grid-demo areas"><div class="a">a</div><div class="b">b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>grid-area</h3>
+  <p>Asigna un área específica a un elemento</p>
+  <ul><li>a</li><li>b</li></ul>
+  <div class="grid-demo areas"><div class="a">a</div><div class="b">b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>grid-auto-flow</h3>
+  <p>Controla cómo se colocan automáticamente los elementos</p>
+  <ul><li>row</li><li>column</li><li>dense</li></ul>
+  <div class="grid-demo auto"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>justify-content</h3>
+  <p>Ajusta el contenido horizontal del grid</p>
+  <ul><li>center</li><li>space-between</li></ul>
+  <div class="grid-demo content"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>align-content</h3>
+  <p>Organiza el contenido en el eje vertical</p>
+  <ul><li>center</li></ul>
+  <div class="grid-demo alignc"><div>a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>place-content</h3>
+  <p>Permite centrar el contenido en ambas direcciones</p>
+  <ul><li>center</li></ul>
+  <div class="grid-demo placec"><div>a</div></div>
+</div>
+
+<div class="card grid">
+  <h3>grid-column</h3>
+  <p>Permite que un elemento ocupe varias columnas</p>
+  <ul><li>span 2</li></ul>
+  <div class="grid-demo span"><div class="span2">a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>grid-row</h3>
+  <p>Permite que un elemento ocupe varias filas</p>
+  <ul><li>span 2</li></ul>
+  <div class="grid-demo spanrow"><div class="row2">a</div><div>b</div></div>
+</div>
+
+<div class="card grid">
+  <h3>grid-auto-columns</h3>
+  <p>Define el tamaño de columnas creadas automáticamente</p>
+  <ul><li>100px</li></ul>
+  <div class="grid-demo auto"><div>a</div><div>b</div></div>
+</div>
+
+</section>
+
+</main>
+
+</body>
+</html>
